@@ -20,6 +20,8 @@ namespace sales_system_example.Controllers
 
         public IActionResult Privacy()
         {
+            ViewData["email"] = "leandro@gmail.com";
+
             return View();
         }
 

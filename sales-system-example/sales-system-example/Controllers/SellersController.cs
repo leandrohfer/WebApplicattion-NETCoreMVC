@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using sales_system_example.Data;
+using sales_system_example.Models;
 using sales_system_example.Services;
 
 namespace sales_system_example.Controllers
@@ -18,6 +19,19 @@ namespace sales_system_example.Controllers
             var listSellers = _sellerService.FindAll();
 
             return View(listSellers);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Seller seller)
+        {
+            _sellerService.Insert(seller);
+            return RedirectToAction(nameof(Index));
         }
     }
 }

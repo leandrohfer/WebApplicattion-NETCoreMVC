@@ -20,7 +20,7 @@ body {
 footer.fixar-rodape {
     bottom: 0;
     left: 0;
-    height: 40px;
+    height: 60px;
     position: fixed;
     width: 100%;
 }

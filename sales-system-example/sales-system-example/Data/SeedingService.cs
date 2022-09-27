@@ -5,7 +5,7 @@ namespace sales_system_example.Data
 {
     public class SeedingService
     {
-        private sales_system_exampleContext _context;
+        private readonly sales_system_exampleContext _context;
 
         public SeedingService(sales_system_exampleContext context)
         {

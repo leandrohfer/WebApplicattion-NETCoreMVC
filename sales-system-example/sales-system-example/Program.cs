@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using sales_system_example.Data;
+using sales_system_example.Services;
 using System;
 using System.Configuration;
 
@@ -14,6 +15,7 @@ builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 
 // Registrando o serviço no sistema de injeção de dependência da aplicação
 builder.Services.AddScoped<SeedingService>();
+builder.Services.AddScoped<SellerService>();
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 

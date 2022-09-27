@@ -16,3 +16,11 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+footer.fixar-rodape {
+    bottom: 0;
+    left: 0;
+    height: 40px;
+    position: fixed;
+    width: 100%;
+}

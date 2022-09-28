@@ -1,0 +1,42 @@
+﻿@model sales_system_example.Models.Seller
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<div>
+    <h4>Seller</h4>
+    <hr />
+
+    <div class="row">
+        <div class="col-12 col-md-3">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <strong>@Html.DisplayNameFor(model => model.Name):</strong> @Html.DisplayFor(model => model.Name)
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <strong>@Html.DisplayNameFor(model => model.Email):</strong> @Html.DisplayFor(model => model.Email)
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <strong>@Html.DisplayNameFor(model => model.BirthDate):</strong> @Html.DisplayFor(model => model.BirthDate)
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <strong>@Html.DisplayNameFor(model => model.BaseSalary):</strong> @Html.DisplayFor(model => model.BaseSalary)
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <strong>@Html.DisplayNameFor(model => model.Department):</strong> @Html.DisplayFor(model => model.Department.Name)
+                </li>
+            </ul>
+            <br />
+            <div class="text-center">
+                <a asp-action="Edit" class="btn btn-success" asp-route-id="@Model.Id">Edit</a> |
+                <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+            </div>
+        </div>
+    </div>
+    
+    
+</div>
+

@@ -16,6 +16,7 @@ builder.Services.AddControllersWithViews().AddRazorRuntimeCompilation();
 // Registrando o serviço no sistema de injeção de dependência da aplicação
 builder.Services.AddScoped<SeedingService>();
 builder.Services.AddScoped<SellerService>();
+builder.Services.AddScoped<DepartmentService>();
 
 AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 

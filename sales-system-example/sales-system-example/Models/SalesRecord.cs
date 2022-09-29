@@ -1,11 +1,16 @@
 ﻿using sales_system_example.Models.Enums;
+using System.ComponentModel.DataAnnotations;
 
 namespace sales_system_example.Models
 {
     public class SalesRecord
     {
         public int Id { get; set; }
+
+        [DisplayFormat(DataFormatString = "{0:dd/MM/yyyy}")]
         public DateTime Date { get; set; }
+
+        [DisplayFormat(DataFormatString = "U${0:F2}")]
         public double Amount { get; set; }
         public SalesStatus Status { get; set; }
         public Seller Seller { get; set; }

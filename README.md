@@ -1,2 +1,2 @@
-# first-WebApplicattion-NETCoreMVC
- Minha primeira aplicação Web utilizando Asp.NET Core MVC.
+# WebApplicattion-NETCoreMVC
+ Aplicação Web utilizando Asp.NET Core MVC.
